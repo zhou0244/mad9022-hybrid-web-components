@@ -11,7 +11,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: min(25rem, 100%);
+  width: min(30rem, 100%);
   margin: 0 auto;
 }
 
