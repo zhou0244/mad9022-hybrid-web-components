@@ -1,4 +1,4 @@
-#Custom Web Component Exercise
+# Custom Web Component Exercise
 
 The second Hybrid exercise is to create your own two custom Web Components without using any Web Component library like Lit and without using any AI generation tool.
 
