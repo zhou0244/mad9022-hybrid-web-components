@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Component</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script src="./js/main.js" type="module"></script>
+    <script src="./components/max-input.js" type="module"></script>
+    <script src="./components/max-textarea.js" type="module"></script>
+  </head>
+  <body>
+    <main>
+      <header class="header"><h1>Form</h1></header>
+      <form class="form">
+        <div class="form-item">
+          <label for="fullName">Full Name</label>
+          <max-input
+            name="fullName"
+            id="fullName"
+            placeholder="Type your full name"
+            limit="15"
+          ></max-input>
+        </div>
+        <div class="form-item">
+          <label for="email">Email</label>
+          <input type="email" name="email" required />
+        </div>
+        <div class="form-item">
+          <label for="comment">Comment</label>
+          <max-textarea
+            name="comment"
+            limit="50"
+            rows="10"
+            placeholder="Type something here..."
+          ></max-textarea>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>
